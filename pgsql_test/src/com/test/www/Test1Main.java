@@ -29,8 +29,8 @@ public class Test1Main {
 			Test1Main test1Main = new Test1Main();
 			
 //			test1Main.c(session);
-//			test1Main.r(session, 44);
-			test1Main.rList(session);
+			test1Main.r(session, 46);
+//			test1Main.rList(session);
 //			test1Main.u(session, 44);
 //			test1Main.d(session, 1);
 
@@ -50,10 +50,10 @@ public class Test1Main {
 
 	public void c(Session session) {
 		// test1 테이블 취급 시작.
-		Test1 test1 = new Test1();
-		test1.setText1("test text1 :) !!!");
-		test1.setText2("test text2 :( !!!");
-		test1.setCreated(new Date());
+		Test1 test1 = new Test1()
+		.setText1("test text1 :) !!!")
+		.setText2("test text2 :( !!!")
+		.setCreated(new Date());
 		//test1.setUpdated(new Date());
 		session.save(test1);
 	}

@@ -58,8 +58,9 @@ public class Test1 implements java.io.Serializable {
 		return this.idx;
 	}
 
-	public void setIdx(int idx) {
+	public Test1 setIdx(int idx) {
 		this.idx = idx;
+		return this;
 	}
 
 	@Column(name = "text1")
@@ -67,8 +68,9 @@ public class Test1 implements java.io.Serializable {
 		return this.text1;
 	}
 
-	public void setText1(String text1) {
+	public Test1 setText1(String text1) {
 		this.text1 = text1;
+		return this;
 	}
 
 	@Column(name = "text2")
@@ -76,8 +78,9 @@ public class Test1 implements java.io.Serializable {
 		return this.text2;
 	}
 
-	public void setText2(String text2) {
+	public Test1 setText2(String text2) {
 		this.text2 = text2;
+		return this;
 	}
 	
 	@Temporal(TemporalType.TIMESTAMP)
@@ -86,8 +89,9 @@ public class Test1 implements java.io.Serializable {
 		return created;
 	}
 
-	public void setCreated(Date created) {
+	public Test1 setCreated(Date created) {
 		this.created = created;
+		return this;
 	}
 
 	@Temporal(TemporalType.TIMESTAMP)
@@ -96,8 +100,9 @@ public class Test1 implements java.io.Serializable {
 		return updated;
 	}
 
-	public void setUpdated(Date updated) {
+	public Test1 setUpdated(Date updated) {
 		this.updated = updated;
+		return this;
 	}
 
 	@Override
@@ -106,6 +111,30 @@ public class Test1 implements java.io.Serializable {
 				+ ", created=" + created + ", updated=" + updated + "]";
 	}
 	
+//int idx;
+//String text1;
+//String text2;
+//Date created;
+//Date updated;
 	
+	public void setMcIdx(int idx) {
+		this.idx = idx;
+	}
+
+	public void setMcText1(String text1) {
+		this.text1 = text1;
+	}
+
+	public void setMcText2(String text2) {
+		this.text2 = text2;
+	}
+
+	public void setMcCreated(Date created) {
+		this.created = created;
+	}
+
+	public void setMcUpdated(Date updated) {
+		this.updated = updated;
+	}
 
 }
