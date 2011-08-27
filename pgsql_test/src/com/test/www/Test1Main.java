@@ -3,6 +3,8 @@
  */
 package com.test.www;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
@@ -63,7 +65,8 @@ public class Test1Main {
 	}
 
 	public void rList(Session session) {
-		List<Test1> list = session.createCriteria(Test1.class).list();
+		List<Test1> list = castList(Test1.class, session.createCriteria(Test1.class).list()); //워닝 뜨는거 싫어성.흥.ㅁ.
+//		List<Test1> list = session.createCriteria(Test1.class).list();
 		System.out.println("list size: " + list.size());
 	}
 
@@ -82,5 +85,12 @@ public class Test1Main {
 //		);
 		session.delete(test1);
 	}
-
+	
+	//@SuppressWarning("unchecked") 대신... 제네릭 타입.. 아흥옹흥 ㅠ
+	public static <T> List<T> castList(Class<? extends T> clazz, Collection<?> c) {
+	    List<T> r = new ArrayList<T>(c.size());
+	    for(Object o: c)
+	      r.add(clazz.cast(o));
+	    return r;
+	}
 }
