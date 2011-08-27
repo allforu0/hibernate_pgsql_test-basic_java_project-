@@ -93,5 +93,4 @@ public class Test1Main {
 	      r.add(clazz.cast(o));
 	    return r;
 	}
-	//이클립스 커밋하면 바로 푸씨? 
 }
