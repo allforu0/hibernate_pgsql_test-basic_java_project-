@@ -1,0 +1,6 @@
+[Java] NetBeans에서 Hibernate Annotation 삽질 - 소녀시대를 이용한 초간단 예제-_-
+http://mudchobo.tistory.com/467
+
+Hibernate Getting Started Guide(3.6.3.Final)
+http://docs.jboss.org/hibernate/core/3.6/quickstart/en-US/html_single/#hibernate-gsg-tutorial-basic
+
