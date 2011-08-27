@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2011. 8. 1 ???? 9:37:17 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.cubrid.hibernate.Country" table="COUNTRY">
+        <id name="code" type="java.lang.String">
+            <column name="CODE" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="continent" type="java.lang.String">
+            <column name="CONTINENT" />
+        </property>
+        <property name="capital" type="java.lang.String">
+            <column name="CAPITAL" />
+        </property>
+    </class>
+</hibernate-mapping>
