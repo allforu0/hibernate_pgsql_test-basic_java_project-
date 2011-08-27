@@ -110,31 +110,5 @@ public class Test1 implements java.io.Serializable {
 		return "Test1 [idx=" + idx + ", text1=" + text1 + ", text2=" + text2
 				+ ", created=" + created + ", updated=" + updated + "]";
 	}
-	
-//int idx;
-//String text1;
-//String text2;
-//Date created;
-//Date updated;
-	
-	public void setMcIdx(int idx) {
-		this.idx = idx;
-	}
-
-	public void setMcText1(String text1) {
-		this.text1 = text1;
-	}
-
-	public void setMcText2(String text2) {
-		this.text2 = text2;
-	}
-
-	public void setMcCreated(Date created) {
-		this.created = created;
-	}
-
-	public void setMcUpdated(Date updated) {
-		this.updated = updated;
-	}
 
 }
