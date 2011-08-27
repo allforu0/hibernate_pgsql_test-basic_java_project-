@@ -4,3 +4,4 @@ http://mudchobo.tistory.com/467
 Hibernate Getting Started Guide(3.6.3.Final)
 http://docs.jboss.org/hibernate/core/3.6/quickstart/en-US/html_single/#hibernate-gsg-tutorial-basic
 
+이클립스에서 커밋 테스트
