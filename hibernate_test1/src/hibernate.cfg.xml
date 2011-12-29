@@ -16,5 +16,6 @@
   <property name="current_session_context_class">thread</property>
   <!-- Mapping files will go here.... -->
   <mapping resource="com/cubrid/hibernate/country.hbm.xml"/>
+  <!-- github egit test no 1 -->
  </session-factory>
 </hibernate-configuration>
